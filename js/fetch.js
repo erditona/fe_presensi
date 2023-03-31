@@ -15,7 +15,7 @@ function isiRow(value) {
     .replace("#LOKASI#", value.location)
     .replace("#STATUS#", value.checkin)
     .replace("#HARIKERJA#", value.biodata.hari_kerja)
-    .replace("#WARNA#", getRandomColor())
-    .replace(/#WARNALOGO#/g, getRandomColorName());
+    .replace("#JAMKERJA#", value.biodata.getRandomColor)
+    .replace("#WARNALOGO#", value.biodata.getRandomColorName);
   addInner("iniTabel", content);
 }
