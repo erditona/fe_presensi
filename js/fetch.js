@@ -1,12 +1,11 @@
 import { get } from "https://bukulapak.github.io/api/process.js";
+import { addInner } from "https://bukulapak.github.io/element/process.js";
+import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
+import { isiTabel } from "./temp/table.js";
 let urlAPI = "https://ws-dito.herokuapp.com/presensi";
 get(urlAPI, isiTablePresensi);
 function isiTablePresensi(results) {
-  console.log(results);
   results.forEach(isiRow);
-}
-function isiRow(value) {
-  console.log(value);
 }
 function isiRow(value) {
   let content = isiTabel
