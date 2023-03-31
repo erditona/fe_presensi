@@ -15,7 +15,8 @@ function isiRow(value) {
     .replace("#LOKASI#", value.location)
     .replace("#STATUS#", value.checkin)
     .replace("#HARIKERJA#", value.biodata.hari_kerja)
-    .replace("#JAMKERJA#", value.biodata.checkin)
-    .replace("#JAMMASUK#", value.biodata.checkin);
+    .replace("#JAMKERJA#", value.biodata.jam_kerja)
+    .replace("#JAMMASUK#", value.biodata.jam_masuk)
+    .replace("#JAMKELUAR#", value.biodata.jam_keluar);
   addInner("iniTabel", content);
 }
