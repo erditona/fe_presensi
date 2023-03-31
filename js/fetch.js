@@ -9,7 +9,7 @@ function isiTablePresensi(results) {
 }
 function isiRow(value) {
   let content = isiTable
-    .replace("#NAMA#", value.Biodata.Nama)
+    .replace("#NAMA#", value.biodata.nama)
     .replace("#NOHP#", value.biodata.phone_number)
     .replace("#JABATAN#", value.biodata.jabatan)
     .replace("#LOKASI#", value.location)
