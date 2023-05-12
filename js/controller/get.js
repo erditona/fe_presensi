@@ -12,7 +12,7 @@ export function isiTablePresensi(results) {
 }
 
 function isiRow(value) {
-  document.getElementById('jml').textContent() = Myvar.length + " Data"
+  document.getElementById("jml").innerHTML = "" + Myvar.length + " Data";
 
   let content = isiTable
     .replace("#NAMA#", value.biodata.nama)
