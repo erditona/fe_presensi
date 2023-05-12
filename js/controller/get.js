@@ -1,9 +1,16 @@
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTable } from "../temp/table.js";
+
+var Myvar = {};
+
 export function isiTablePresensi(results) {
-  results.reverse().forEach(isiRow);
+  Myvar.length = results.length;
+  results.sort((a, b) => new Date(b.datetime) - new Date(a.datetime)); //mengurutkan berdasasrkan datetime in descending order
+  results.forEach(isiRow);
+  console.log(results);
 }
+
 function isiRow(value) {
   let content = isiTable
     .replace("#NAMA#", value.biodata.nama)
