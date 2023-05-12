@@ -12,6 +12,8 @@ export function isiTablePresensi(results) {
 }
 
 function isiRow(value) {
+  document.getElementById('jml').textContent() = Myvar.length + " Data"
+
   let content = isiTable
     .replace("#NAMA#", value.biodata.nama)
     .replace("#NOHP#", value.biodata.phone_number ? value.biodata.phone_number : value.phone_number ? value.phone_number : "#NOHP#")
